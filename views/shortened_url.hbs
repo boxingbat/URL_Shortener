@@ -1,0 +1,10 @@
+<div class="fs-2 my-3">Success! Please use this link:</div>
+
+<a href="/{{shortened_url}}" id="shortened_url" class="fs-3">localhost:3000/{{shortened_url}}</a>
+<button type="button" onclick="copy()" class="my-3 btn btn-primary">Copy</button>
+<script>
+  function copy() {
+    const clips = document.querySelector("#shortened_url").innerText
+    navigator.clipboard.writeText(clips)
+  }
+</script>
