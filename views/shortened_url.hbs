@@ -1,7 +1,13 @@
-<div class="fs-2 my-3">Success! Please use this link:</div>
+<div class="fs-2 my-3 text-center">Success! Please use this link:</div>
 
-<a href="/{{shortened_url}}" id="shortened_url" class="fs-3">localhost:3000/{{shortened_url}}</a>
-<button type="button" onclick="copy()" class="my-3 btn btn-primary">Copy</button>
+<div class="text-center">
+  <a href="/{{shortened_url}}" id="shortened_url" class="fs-3 text-decoration-none">localhost:3000/{{shortened_url}}</a>
+</div>
+
+<div class="text-center">
+  <button type="button" onclick="copy()" class="my-3 btn btn-primary">Copy</button>
+</div>
+
 <script>
   function copy() {
     const clips = document.querySelector("#shortened_url").innerText
